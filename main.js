@@ -5,11 +5,17 @@
 var destinazione = prompt("La tua stazione di partenza è Cagliari. \nScrivi una destinazione tra Oristano, Sassari, Olbia:")
 
 // calcolo i km usando la scelta della destinazione
-if (destinazione == "Oristano") {
+if (destinazione === "Oristano") {
+    numeroChilometri = (90);
+} else if (destinazione === "oristano") {
     numeroChilometri = (90);
 } else if (destinazione === "Sassari") {
     numeroChilometri = (200);
+} else if (destinazione === "sassari") {
+    numeroChilometri = (200);
 } else if (destinazione === "Olbia") {
+    numeroChilometri = (260);
+} else if (destinazione === "olbia") {
     numeroChilometri = (260);
 }
 
