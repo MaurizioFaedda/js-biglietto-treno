@@ -19,6 +19,9 @@ if (destinazione === "Oristano") {
     numeroChilometri = (260);
 }
 
+document.getElementById('città').innerHTML =
+destinazione;
+
 // Chiedo all'utente di inserire il suo anno di nascita
 var annoNascitaUtente = parseInt(prompt("Inserisci il tuo anno di nascita:"));
 
@@ -37,3 +40,13 @@ if (etàUtente > 65) {
 } else {
     console.log(prezzoBiglietto);
 }
+
+document.getElementById('prezzo').innerHTML =
+prezzoBiglietto;
+
+var data = new Date();
+var gg, mm, aaaa;
+gg = data.getDate() + "/";
+mm = data.getMonth() + 1 + "/";
+aaaa = data.getFullYear();
+document.getElementById('data-oggi').innerHTML = gg + mm + aaaa;
